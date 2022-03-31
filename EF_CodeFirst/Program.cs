@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using EF_CodeFirst.Database;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<StudentContext>(item => item.UseSqlServer(builder.Configuration.GetConnectionString("Student")));
+
 
 var app = builder.Build();
 
