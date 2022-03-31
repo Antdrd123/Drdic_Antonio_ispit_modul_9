@@ -8,10 +8,10 @@ namespace EF_CodeFirst.Models
         [Key]
         public int GradeID { get; set; }
 
-        [Column(TypeName = "nvarchar")]
+        [Column(TypeName = "nvarchar(200)")]
         public string GradeName { get; set; }
 
-        [Column(TypeName = "nvarchar")]
+        [Column(TypeName = "nvarchar(200)")]
         public string Section { get; set; }
 
         

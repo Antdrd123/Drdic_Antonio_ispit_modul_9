@@ -8,7 +8,7 @@ namespace EF_CodeFirst.Models
         [Key]
         public int StudentID { get; set; }
 
-        [Column(TypeName = "nchar")]
+        [Column(TypeName = "nchar(200)")]
         public string StudentName { get; set; }
 
         [Column(TypeName = "datetime")]

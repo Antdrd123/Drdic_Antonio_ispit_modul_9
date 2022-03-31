@@ -20,16 +20,16 @@ namespace EF_CodeFirst.Database
                     StudentID = 1,
                     StudentName = "Marko",
                     DateOfBirth = new DateTime (1998,7,8),
-                    Height = 187,
-                    Weight = 85
+                    Height = 187.72m,
+                    Weight = 85.72F
                 },
                 new Student
                 {
                     StudentID = 2,
                     StudentName = "Ana",
                     DateOfBirth = new DateTime(1994, 5, 2),
-                    Height = 168,
-                    Weight = 57
+                    Height = 168.7m,
+                    Weight = 57.75F
                 }
 
                 );
